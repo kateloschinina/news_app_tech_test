@@ -3,5 +3,9 @@
   "devDependencies": {
     "origami-build-tools": "latest",
     "gulp": "latest"
+  },
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
   }
 }

@@ -17,6 +17,7 @@ $o-header-is-silent: false;
 @import 'o-header/main';
 @import 'o-footer/main';
 @import 'o-colors/main';
+@import 'o-typography/main';
 
 // Store the default FT sans-serif font stack in a variable
 $sans-serif: oFontsGetFontFamilyWithFallbacks(BentonSans);

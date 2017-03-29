@@ -13,6 +13,9 @@ $o-header-is-silent: false;
 // Output footer classes
 $o-footer-is-silent: false;
 
+// Output typography classes
+$o-typography-is-silent: false;
+
 // Import Origami components
 @import 'o-grid/main';
 @import 'o-fonts/main';

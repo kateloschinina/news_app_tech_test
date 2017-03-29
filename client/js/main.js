@@ -1,5 +1,6 @@
 // Require module
 require('o-header');
+require('o-footer');
 require('o-typography');
 
 // Wait until the page has loaded

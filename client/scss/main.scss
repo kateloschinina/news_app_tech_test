@@ -10,6 +10,9 @@ $o-ft-icons-is-silent: false;
 // Output header classes
 $o-header-is-silent: false;
 
+// Output footer classes
+$o-footer-is-silent: false;
+
 // Import Origami components
 @import 'o-grid/main';
 @import 'o-fonts/main';

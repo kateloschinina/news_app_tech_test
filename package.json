@@ -1,11 +1,17 @@
 {
   "private": true,
   "devDependencies": {
-    "origami-build-tools": "latest",
-    "gulp": "latest"
+    "gulp": "latest",
+    "mocha": "^3.2.0",
+    "origami-build-tools": "latest"
   },
   "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }

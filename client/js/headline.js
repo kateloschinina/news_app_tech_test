@@ -1,13 +1,40 @@
-var request = require('request');
+var request = require('request-promise');
 
-request({
-  uri: 'http://api.ft.com/content/search/v1?apiKey=fqm6ejv37wdsvrejhz7cefwz',
-  json: true,
-  method: 'POST',
-  // contentType: 'application/json',
-  body: {
-    "queryString": "Brexit"
-  }
-}, function (error, response, body) {
-      console.log('body:', body.results[0].results[10]); // Print the HTML for the Google homepage.
-  });
+function makeAPIRequest(query, resultsPerPage, pageNumber){
+  return new Promise(function(resolve, reject) {
+    options = {
+      uri: 'http://api.ft.com/content/search/v1?apiKey=fqm6ejv37wdsvrejhz7cefwz',
+      json: true,
+      method: 'POST',
+      body: {
+        "queryString": query,
+    	  "queryContext" : {
+          "curations" : [ "ARTICLES"]
+        },
+        "resultContext" : {
+          "aspects": [
+            "title",
+            "summary"
+          ],
+          "maxResults": resultsPerPage,
+          "offset" : (pageNumber - 1)*resultsPerPage
+        }
+      }
+    };
+    request(options, function (error, response, body) {
+        if (error) {
+          return console.error('error while loading APIs:', err);
+        }
+        resolve(body.results[0].results);
+      });
+  })
+}
+//
+// makeAPIRequest("Brexit", 2, 1).then(function(data) {
+//   console.log(data[0].title.title);
+//   console.log(data[0].summary.excerpt);
+// })
+
+module.exports = {
+  makeAPIRequest
+}

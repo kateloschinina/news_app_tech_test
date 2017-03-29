@@ -30,3 +30,4 @@ It'd be really awesome if, on top of all that, your site:
 How I explored new technologies
 ----
 1. I browsed through suggested technologies, and decided to start to spike with Origami tutorial to explore what it can offer.
+2. Origami technology allowed me to build a simple page with #### style, header and footer. At this stage it seemed reasonable to move towards API exploration. First of all, I have to do some spiking to understand how I can work with suggested APIs.

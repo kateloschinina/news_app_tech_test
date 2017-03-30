@@ -12,6 +12,7 @@
     "request-promise": "^4.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "python -m SimpleHTTPServer 8001"
   }
 }

@@ -3,6 +3,7 @@ require('o-header');
 require('o-grid');
 require('o-footer');
 require('o-typography');
+require('o-teaser');
 
 // Wait until the page has loaded
 if (document.readyState === 'interactive' || document.readyState === 'complete') {

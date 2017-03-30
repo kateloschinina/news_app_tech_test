@@ -16,11 +16,15 @@ $o-footer-is-silent: false;
 // Output typography classes
 $o-typography-is-silent: false;
 
+// Output teaser classes
+$o-teaser-is-silent: false;
+
 // Import Origami components
 @import 'o-grid/main';
 @import 'o-fonts/main';
 @import 'o-icons/main';
 @import 'o-header/main';
+@import 'o-teaser/main';
 @import 'o-footer/main';
 @import 'o-colors/main';
 @import 'o-typography/main';

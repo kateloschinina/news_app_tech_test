@@ -38,12 +38,6 @@ describe('How API works', function() {
         done();
       });
     });
-    it('items have editorial', function(done){
-      makeAPIRequest("Brexit", 1, 1).then(function(data){
-        assert.equal(typeof(data[0].editorial.byline), "string");
-        done();
-      });
-    });
     it('returns a promise', function(done){
       assert.equal(typeof(makeAPIRequest("Brexit", 1, 1)), "object");
       done();

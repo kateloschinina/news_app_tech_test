@@ -93,7 +93,7 @@ html:before {
       min-width: 0 !important; } }
   @media (min-width: 46.25em) {
     [data-o-grid-colspan] {
-      padding-left: 20px;} }
+      padding-left: 20px; } }
   @media \0screen {
     [data-o-grid-colspan] {
       padding-left: 20px; } }
@@ -2169,6 +2169,364 @@ html:before {
   font-family: FinancierTextWeb;
   font-weight: 400;
   font-style: italic; }
+
+.o-buttons {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: 0;
+  outline: 0;
+  border-style: solid;
+  text-align: center;
+  text-decoration: none;
+  font-family: MetricWeb, sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s background-color, 0.15s color ease-out, 0.15s border-color ease-out;
+  transition: 0.3s background-color, 0.15s color ease-out, 0.15s border-color ease-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-clip: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-size: 16px;
+  min-height: 26px;
+  min-width: 26px;
+  padding: 5px 8px 5px 8px;
+  font-size: 14px;
+  line-height: 14px;
+  border-width: 1px;
+  color: #17484C;
+  background-color: transparent;
+  border-color: rgba(38, 116, 122, 0.4); }
+  .o-buttons[aria-selected=true], .o-buttons[aria-pressed=true] {
+    color: #164447;
+    background-color: rgba(43, 187, 191, 0.4);
+    border-color: rgba(38, 116, 122, 0.5); }
+  .o-buttons:not([disabled]):focus:not(:hover),
+  .o-hoverable-on .o-buttons:not([disabled]):hover {
+    background-color: rgba(43, 187, 191, 0.08);
+    border-color: rgba(38, 116, 122, 0.5); }
+  .o-buttons:not([disabled]):active {
+    color: #164447;
+    border-color: #f7e9d9; }
+  .o-buttons[disabled] {
+    pointer-events: none;
+    opacity: 0.4;
+    cursor: default; }
+  .o-buttons::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+.o-buttons--small {
+  background-size: 12px;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 4px 7px 4px 7px;
+  font-size: 12px;
+  line-height: 12px;
+  border-width: 1px; }
+
+.o-buttons--medium {
+  background-size: 16px;
+  min-height: 26px;
+  min-width: 26px;
+  padding: 5px 8px 5px 8px;
+  font-size: 14px;
+  line-height: 14px;
+  border-width: 1px; }
+
+.o-buttons--big {
+  background-size: 18px;
+  min-height: 36px;
+  min-width: 36px;
+  padding: 8px 18px 8px 18px;
+  font-size: 18px;
+  line-height: 18px;
+  border-width: 1px; }
+
+.o-buttons--standard {
+  color: #17484C;
+  background-color: transparent;
+  border-color: rgba(38, 116, 122, 0.4); }
+  .o-buttons--standard[aria-selected=true], .o-buttons--standard[aria-pressed=true] {
+    color: #164447;
+    background-color: rgba(43, 187, 191, 0.4);
+    border-color: rgba(38, 116, 122, 0.5); }
+  .o-buttons--standard:not([disabled]):focus:not(:hover),
+  .o-hoverable-on .o-buttons--standard:not([disabled]):hover {
+    background-color: rgba(43, 187, 191, 0.08);
+    border-color: rgba(38, 116, 122, 0.5); }
+  .o-buttons--standard:not([disabled]):active {
+    color: #164447;
+    border-color: #f7e9d9; }
+
+.o-buttons--standout {
+  color: #ffffff;
+  background-color: #26747a;
+  border-color: #26747a; }
+  .o-buttons--standout[aria-selected=true], .o-buttons--standout[aria-pressed=true] {
+    color: #0A2F33;
+    background-color: #2bbbbf;
+    border-color: #2bbbbf; }
+  .o-buttons--standout[disabled] {
+    color: #17484C;
+    border-color: #26747a; }
+  .o-buttons--standout:not([disabled]):focus:not(:hover),
+  .o-hoverable-on .o-buttons--standout:not([disabled]):hover {
+    color: #ffffff;
+    background-color: #1a4f53 !important;
+    border-color: #1a4f53; }
+  .o-buttons--standout:not([disabled]):active {
+    color: #cccccc;
+    background-color: #1a4f53 !important; }
+
+.o-buttons--inverse {
+  color: #ffffff;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.5); }
+  .o-buttons--inverse[aria-selected=true], .o-buttons--inverse[aria-pressed=true] {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff; }
+  .o-buttons--inverse:not([disabled]):focus:not(:hover),
+  .o-hoverable-on .o-buttons--inverse:not([disabled]):hover {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.5); }
+  .o-buttons--inverse:not([disabled]):active {
+    color: #ffffff; }
+
+.o-buttons--uncolored {
+  color: #000000;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.5); }
+  .o-buttons--uncolored[aria-selected=true], .o-buttons--uncolored[aria-pressed=true] {
+    background-color: #000000 !important;
+    color: #ffffff;
+    border-color: #000000; }
+  .o-buttons--uncolored[disabled] {
+    color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.2); }
+  .o-buttons--uncolored:not([disabled]):focus:not(:hover),
+  .o-hoverable-on .o-buttons--uncolored:not([disabled]):hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.5); }
+  .o-buttons--uncolored:not([disabled]):active {
+    border-color: #000000; }
+
+.o-buttons--b2c {
+  color: #ffffff;
+  background-color: #3a70af;
+  border-color: #3a70af; }
+  .o-buttons--b2c[aria-selected=true], .o-buttons--b2c[aria-pressed=true] {
+    background-color: #99c6fb !important;
+    color: #1d1d1d;
+    border-color: #99c6fb; }
+  .o-buttons--b2c[disabled] {
+    color: #3a70af;
+    background-color: rgba(255, 255, 255, 0.4); }
+  .o-buttons--b2c:not([disabled]):focus:not(:hover),
+  .o-hoverable-on .o-buttons--b2c:not([disabled]):hover {
+    background-color: rgba(78, 150, 235, 0.8);
+    color: #1d1d1d;
+    border-color: #3a70af; }
+  .o-buttons--b2c:not([disabled]):active {
+    color: #1d1d1d;
+    background-color: rgba(78, 150, 235, 0.8);
+    border-color: #99c6fb; }
+
+.o-buttons__pagination > .o-buttons,
+.o-buttons-pagination > .o-buttons {
+  padding-left: 5px;
+  padding-right: 5px;
+  min-width: 24px; }
+  .o-buttons__pagination > .o-buttons.o-buttons--big,
+  .o-buttons-pagination > .o-buttons.o-buttons--big {
+    padding-left: 9px;
+    padding-right: 9px;
+    min-width: 36px; }
+
+html > body .o-buttons-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 3px;
+  padding-left: 22px; }
+  html > body .o-buttons-icon.o-buttons-icon--icon-only {
+    padding-left: 0;
+    background-position: 50%; }
+  html > body .o-buttons-icon .o-buttons-icon__label {
+    font-size: 0;
+    height: 1px;
+    overflow: hidden;
+    display: block; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-left {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%2317484C,%2317484C&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%2317484C,%2317484C&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-left[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23164447,%23164447&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23164447,%23164447&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23164447,%23164447&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23164447,%23164447&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23164447,%23164447&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23164447,%23164447&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-right {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%2317484C,%2317484C&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%2317484C,%2317484C&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-right[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23164447,%23164447&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23164447,%23164447&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23164447,%23164447&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23164447,%23164447&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23164447,%23164447&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23164447,%23164447&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--standout {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--standout[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--standout[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%230A2F33,%230A2F33&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%230A2F33,%230A2F33&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--standout[disabled] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%2317484C,%2317484C&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%2317484C,%2317484C&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--standout:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--standout:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--standout {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--standout[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--standout[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%230A2F33,%230A2F33&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%230A2F33,%230A2F33&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--standout[disabled] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%2317484C,%2317484C&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%2317484C,%2317484C&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--standout:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--standout:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23CCCCCC,%23CCCCCC&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--inverse {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--inverse[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--inverse[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--inverse:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--inverse:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--inverse {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--inverse[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--inverse[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--inverse:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--inverse:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--uncolored {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--uncolored[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--uncolored[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--uncolored[disabled] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23000000,%23000000&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--uncolored:after {
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--uncolored {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--uncolored[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--uncolored[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--uncolored[disabled] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23000000,%23000000&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--uncolored:after {
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--b2c {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--b2c[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--b2c[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%231D1D1D,%231D1D1D&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%231D1D1D,%231D1D1D&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--b2c[disabled] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%233A70AF,%233A70AF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%233A70AF,%233A70AF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--b2c:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%231D1D1D,%231D1D1D&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%231D1D1D,%231D1D1D&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-left.o-buttons--b2c:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%231D1D1D,%231D1D1D&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-left?source=o-icons&tint=%231D1D1D,%231D1D1D&format=png&width=128") \9;
+      content: ''; }
+  html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--b2c {
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=svg");
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23FFFFFF,%23FFFFFF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--b2c[aria-selected=true], html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--b2c[aria-pressed=true] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%231D1D1D,%231D1D1D&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%231D1D1D,%231D1D1D&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--b2c[disabled] {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%233A70AF,%233A70AF&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%233A70AF,%233A70AF&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--b2c:not([disabled]):active {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%231D1D1D,%231D1D1D&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%231D1D1D,%231D1D1D&format=png&width=128") \9; }
+    html > body .o-buttons-icon.o-buttons-icon--arrow-right.o-buttons--b2c:after {
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%231D1D1D,%231D1D1D&format=svg");
+      background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%231D1D1D,%231D1D1D&format=png&width=128") \9;
+      content: ''; }
+
+.o-buttons__group > .o-buttons,
+.o-buttons-group > .o-buttons {
+  position: relative;
+  border-radius: 0; }
+  .o-buttons__group > .o-buttons + .o-buttons,
+  .o-buttons-group > .o-buttons + .o-buttons {
+    margin-left: -1px; }
+  .o-buttons__group > .o-buttons:hover, .o-buttons__group > .o-buttons:focus,
+  .o-buttons-group > .o-buttons:hover,
+  .o-buttons-group > .o-buttons:focus {
+    z-index: 1; }
+
+.o-buttons__group :first-child,
+.o-buttons-group :first-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left-width: 1px; }
+
+.o-buttons__group :last-child,
+.o-buttons-group :last-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
 
 .o-typography-heading1 {
   font-family: FinancierDisplayWeb, serif;
@@ -4286,8 +4644,6 @@ html:before {
     border-bottom: 0; } }
 
 @media (min-width: 30.625em) and (max-width: 61.24em) {
-  .o-teaser__content {
-    min-height: 140px; } }
   .o-teaser--large.o-teaser--has-image .o-teaser__content {
     position: relative;
     float: left;
@@ -4312,8 +4668,6 @@ html:before {
     width: 70%; } }
 
 @media (min-width: 61.25em) {
-  .o-teaser__content {
-    min-height: 160px; } }
   .o-teaser--large.o-teaser--has-image .o-teaser__content {
     border-bottom: 0; } }
 
@@ -5375,5 +5729,13 @@ html {
 
 body {
   margin: 0; }
+
+@media (min-width: 30.625em) and (max-width: 61.24em) {
+  .o-teaser__content {
+    min-height: 140px; } }
+
+@media (min-width: 61.25em) {
+  .o-teaser__content {
+    min-height: 200px; } }
 
 /*# sourceMappingURL=bundle.css.map */

@@ -9,6 +9,7 @@
     "o-icons": "^4.0.0",
     "o-typography": "^4.3.3",
     "o-teaser": "^1.11.2",
-    "o-teaser-collection": "^1.1.1"
+    "o-teaser-collection": "^1.1.1",
+    "o-buttons": "^4.5.4"
   }
 }

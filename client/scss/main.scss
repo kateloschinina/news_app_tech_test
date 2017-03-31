@@ -22,6 +22,9 @@ $o-teaser-is-silent: false;
 // Output teaser classes
 $o-teaser-collection-is-silent: false;
 
+// Output teaser classes
+$o-buttons-is-silent: false;
+
 // Import Origami components
 @import 'o-grid/main';
 @import 'o-fonts/main';
@@ -30,6 +33,7 @@ $o-teaser-collection-is-silent: false;
 @import 'o-teaser/main';
 @import 'o-footer/main';
 @import 'o-colors/main';
+@import 'o-buttons/main';
 @import 'o-typography/main';
 @import 'o-teaser-collection/main';
 
@@ -55,3 +59,15 @@ body {
 
 
 // Add your own styles here…
+
+@media (min-width: 30.625em) and (max-width: 61.24em) {
+  .o-teaser__content {
+    min-height: 140px;
+	}
+}
+
+@media (min-width: 61.25em) {
+	.o-teaser__content {
+		min-height: 200px;
+	}
+}

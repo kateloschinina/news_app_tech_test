@@ -54,7 +54,7 @@ describe('loading express', function () {
       .expect('q=Brexit', done);
       done();
   });
-  
+
   it('renders index', function testSlash(done) {
     request(server)
       .get('/search?q=Brexit')
@@ -64,5 +64,12 @@ describe('loading express', function () {
       .expect('<p class="o-teaser__standfirst">')
       .expect('<div class="o-grid-row">', done);
       done();
+  });
+
+  it('gets /', function testSlash(done) {
+    request(server)
+      .get('/')
+      .expect(pageNumber, 1)
+    done();
   });
 });

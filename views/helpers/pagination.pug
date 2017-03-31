@@ -1,0 +1,14 @@
+div(class="o-grid-container")
+	div(class="o-grid-row")
+		div(class="o-buttons__pagination" data-o-grid-colspan="center")
+			if page > 1
+				a(href= "search?q="+theme+"&page="+(page-1))
+					button(class="o-buttons o-buttons-icon o-buttons-icon--arrow-left o-buttons-icon--icon-only")
+						span(class="o-buttons-icon__label") 'Fewer results'
+			else
+				button(class="o-buttons o-buttons-icon o-buttons-icon--arrow-left o-buttons-icon--icon-only" disabled)
+					span(class="o-buttons-icon__label") 'Fewer results'
+			button(class="o-buttons")= page
+			a(href= "search?q="+theme+"&page="+(page+1))
+				button(class="o-buttons o-buttons-icon o-buttons-icon--arrow-right o-buttons-icon--icon-only")
+					span(class="o-buttons-icon__label") 'More results'

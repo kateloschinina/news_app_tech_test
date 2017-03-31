@@ -93,7 +93,7 @@ html:before {
       min-width: 0 !important; } }
   @media (min-width: 46.25em) {
     [data-o-grid-colspan] {
-      padding-left: 20px; } }
+      padding-left: 20px;} }
   @media \0screen {
     [data-o-grid-colspan] {
       padding-left: 20px; } }
@@ -4286,6 +4286,8 @@ html:before {
     border-bottom: 0; } }
 
 @media (min-width: 30.625em) and (max-width: 61.24em) {
+  .o-teaser__content {
+    min-height: 140px; } }
   .o-teaser--large.o-teaser--has-image .o-teaser__content {
     position: relative;
     float: left;
@@ -4310,6 +4312,8 @@ html:before {
     width: 70%; } }
 
 @media (min-width: 61.25em) {
+  .o-teaser__content {
+    min-height: 160px; } }
   .o-teaser--large.o-teaser--has-image .o-teaser__content {
     border-bottom: 0; } }
 

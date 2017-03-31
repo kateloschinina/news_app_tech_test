@@ -14,7 +14,10 @@ function makeAPIRequest(query, resultsPerPage, pageNumber){
         "resultContext" : {
           "aspects": [
             "title",
-            "summary"
+            "summary",
+            "location",
+            "lifecycle",
+            "editorial"
           ],
           "maxResults": resultsPerPage,
           "offset" : (pageNumber - 1)*resultsPerPage
@@ -29,11 +32,10 @@ function makeAPIRequest(query, resultsPerPage, pageNumber){
       });
   })
 }
-//
-// makeAPIRequest("Brexit", 2, 1).then(function(data) {
-//   console.log(data[0].title.title);
-//   console.log(data[0].summary.excerpt);
-// })
+
+makeAPIRequest("Brexit", 2, 1).then(function(data) {
+  console.log(data[0]);
+})
 
 module.exports = {
   makeAPIRequest

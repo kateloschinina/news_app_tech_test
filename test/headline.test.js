@@ -1,4 +1,9 @@
+var expect = require('chai').expect;
+var should = require('chai').should();
+var spies = require('chai-spies');
+var chai = require('chai');
 var assert = require('assert');
+var request = require('request-promise');
 var makeAPIRequest = require('../client/js/headline.js').makeAPIRequest;
 
 describe('How API works', function() {
@@ -20,6 +25,14 @@ describe('How API works', function() {
         assert.equal(typeof(data[0].summary.excerpt), "string");
         done();
       });
+    });
+    it('returns a promise', function(done){
+      assert.equal(typeof(makeAPIRequest("Brexit", 1, 1)), "object");
+      done();
+    });
+    it('request was called', function(done){
+      request.should.be.called;
+      done();
     });
   });
 });

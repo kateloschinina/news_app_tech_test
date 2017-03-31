@@ -5730,11 +5730,11 @@ html {
 body {
   margin: 0; }
 
-@media (min-width: 30.625em) and (max-width: 61.24em) {
+@media (min-width: 30.625em) and (max-width: 76.24em) {
   .o-teaser__content {
     min-height: 140px; } }
 
-@media (min-width: 61.25em) {
+@media (min-width: 76.25em) {
   .o-teaser__content {
     min-height: 200px; } }
 

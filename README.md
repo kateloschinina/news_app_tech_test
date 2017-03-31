@@ -35,4 +35,5 @@ How I explored new technologies
 4. Server-rendered: created an Express part of the functionality. Moved all functionality there. Now it is calling APIs and displays information of the page.
 5. Couldn't stop myself from spiking a search functionality - took just a little bit.
 6. Cleaned all the styling - removed origami parts I don't need, put teasers in container, so that now you can see the topic of your search at the top. Changed the teaser type as this is the one that is currently used at real #### website. Next step - do all the test coverage for server-rendered part of app.
-7. I have got some test coverage, although it is far from perfect, and for some files it is suprisingly low. I decided to use istanbul to estimate my test coverage for now. In the interest of time my next steps would be to TDD some functionality improvement, and then if I have time try to solve test coverage problem again. 
+7. I have got some test coverage, although it is far from perfect, and for some files it is suprisingly low. I decided to use istanbul to estimate my test coverage for now. In the interest of time my next steps would be to TDD some functionality improvement, and then if I have time try to solve test coverage problem again.
+8. As I am marginally satisfied with functionality, I decided to deploy to Heroku, just in case if I have any issue with the deployment.

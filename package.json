@@ -8,18 +8,19 @@
     "origami-build-tools": "latest"
   },
   "dependencies": {
-    "chai": "^3.5.0",
-    "express": "^4.15.2",
-    "mocha": "^3.2.0",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.0",
     "body-parser": "~1.17.1",
+    "chai": "^3.5.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
     "morgan": "~1.8.1",
     "pug": "~2.0.0-beta11",
-    "serve-favicon": "~2.4.2"
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0",
+    "serve-favicon": "~2.4.2",
+    "supertest": "^3.0.0"
   },
   "scripts": {
     "test": "mocha",

@@ -33,3 +33,5 @@ How I explored new technologies
 2. Origami technology allowed me to build a simple page with #### style, header and footer. At this stage it seemed reasonable to move towards API exploration. First of all, I have to do some spiking to understand how I can work with suggested APIs.
 3. I moved to TDD API exploration. After a number of attempts I was able to get all the necessary information from APIs using promises. Tests that test APIs pass.
 4. Server-rendered: created an Express part of the functionality. Moved all functionality there. Now it is calling APIs and displays information of the page.
+5. Couldn't stop myself from spiking a search functionality - took just a little bit.
+6. Cleaned all the styling - removed origami parts I don't need, put teasers in container, so that now you can see the topic of your search at the top. Changed the teaser type as this is the one that is currently used at real #### website. Next step - do all the test coverage for server-rendered part of app.

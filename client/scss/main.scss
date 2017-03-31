@@ -19,6 +19,9 @@ $o-typography-is-silent: false;
 // Output teaser classes
 $o-teaser-is-silent: false;
 
+// Output teaser classes
+$o-teaser-collection-is-silent: false;
+
 // Import Origami components
 @import 'o-grid/main';
 @import 'o-fonts/main';
@@ -28,6 +31,7 @@ $o-teaser-is-silent: false;
 @import 'o-footer/main';
 @import 'o-colors/main';
 @import 'o-typography/main';
+@import 'o-teaser-collection/main';
 
 // Store the default FT sans-serif font stack in a variable
 $sans-serif: oFontsGetFontFamilyWithFallbacks(BentonSans);

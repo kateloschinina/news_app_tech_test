@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/search', function(req, res, next) {
   makeAPIRequest(req.query.q, 10, 1).then(function(data){
-    res.render('index', { data: data });
+    res.render('index', { data: data, theme: req.query.q });
   });
 });
 
